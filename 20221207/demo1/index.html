@@ -10,13 +10,60 @@
     <!-- <script src="index.js"></script> -->
     <script type="module">
         import App, {date} from "./index.js";
+        import products from "./products.js";
 
         // DOM API
         document.addEventListener('DOMContentLoaded', function () {
             console.log('DOM ready!')
-            App();
-            console.log(date);
+            // App();
+            // console.log(date);
+
+            const p1 = products[0];
+            console.log(p1);
+
+            // Destructure
+            // let id = p1.productID;
+            // let name = p1.productName;
+            //console.log(p1.productID, p1.productName);
+            let {productID, productName } = p1;
+            console.log(productID, productName);
+
+            let {id=productID, name=productName } = p1;
+            console.log(id, name);
+
+            // Rest
+            let [a,b,c, ...x] = products;
+            console.log(a)
+            console.log(b)
+            console.log(c)
+            console.log(x)
+
+            // Spread
+            console.log(products)
+            console.log(a,b,c)
+            console.log(...products)
+            
+            console.clear();
+            // products.forEach(p => {
+            //     console.log(`${p.productID} ${p.productName}`);
+            // });
+
+            // products.forEach(p => console.log(`${p.productID} ${p.productName}`));
+
+            const ul = document.getElementById('results');
+            products.forEach(p => {
+                const li = document.createElement('li');
+
+                let pr = document.createElement('p');
+                pr.innerHTML = p.productName;
+                pr.innerHTML += ` <strong>${p.unitPrice}</strong>`;
+
+                li.appendChild(pr);
+                
+                ul.appendChild(li);
+            });
         })
     </script>
+    <ul id="results"></ul>
 </body>
 </html>
