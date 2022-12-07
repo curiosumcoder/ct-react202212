@@ -1,4 +1,4 @@
-let products = [
+const products = [
   { productID: 11, productName: "Queso Cabrales", unitPrice: 21.0 },
   { productID: 12, productName: "Queso Manchego La Pastora", unitPrice: 38.0 },
   { productID: 13, productName: "Konbu", unitPrice: 6.0 },
@@ -39,3 +39,5 @@ let products = [
   { productID: 48, productName: "Chocolade", unitPrice: 12.75 },
   { productID: 49, productName: "Maxilaku", unitPrice: 20.0 },
 ];
+
+export default products;
