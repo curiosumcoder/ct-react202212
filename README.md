@@ -4,7 +4,7 @@ Material relacionado con el curso de React Introductorio impartido para UCenfote
 ### Requerimientos de software
 * Microsoft Visual Studio Code https://code.visualstudio.com/
  <br/>Instalar o actualizar a la última versión.
- <br/>Agregar la extensión Angular Essentials: https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials, deshabilitar las que indique el profesor.
+ <br/>Agregar la extensión ES7+ React/Redux/React-Native snippets, https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets.
 	
 * Node.js
  <br/>https://nodejs.org/en/download/.
