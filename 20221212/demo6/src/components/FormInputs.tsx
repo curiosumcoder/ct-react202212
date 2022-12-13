@@ -16,8 +16,8 @@ function FormInputs() {
             <button onClick={()=> { alert(input1.current?.value) }}>input1</button>
         </p>
         <p>
-            <input type="text" ref={(input) => input2 = input} />
-            <button onClick={()=> { alert(input2?.value) }}>input2</button>
+            {/* <input type="text" ref={(input) => input2 = input} />
+            <button onClick={()=> { alert(input2?.value) }}>input2</button> */}
         </p>        
         <p>
             <input type="text" value={input3} 

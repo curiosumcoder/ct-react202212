@@ -1,5 +1,4 @@
 import React, { SyntheticEvent, useState, useEffect } from "react";
-import useInput, { IInput } from "../../hooks/useInput";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
 

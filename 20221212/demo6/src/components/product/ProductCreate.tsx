@@ -53,6 +53,32 @@ function ProductCreate({onCreated}:{ onCreated?: Function}) {
             placeholder="Name" required minLength={2} ref={iName} 
             onChange={(event)=> checkValidation(event)}/>
         </div>
+        <label htmlFor="iUnitPrice" className="form-label">
+            Unit Price
+          </label>
+          <input
+            type="number"
+            className="form-control"
+            id="iUnitPrice"
+            placeholder="Unit Price"
+            required
+            min={1}
+            ref={iUnitPrice}
+            onChange={(event) => checkValidation(event)}
+          />
+          <label htmlFor="iQuantityPerUnit" className="form-label">
+            Quantity Per Unit
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="iQuantityPerUnit"
+            placeholder="Quantity Per Unit"
+            required
+            minLength={6}
+            ref={iQuantityPerUnit}
+            onChange={(event) => checkValidation(event)}
+          />        
         <button type="submit" className="btn btn-primary">
           Save
         </button>
