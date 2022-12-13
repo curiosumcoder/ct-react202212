@@ -8,7 +8,7 @@ const withProductSearch = (WrappedComponent: any, filter:string) => {
 
     useEffect(()=>{
         doSearch(filter)
-    })
+    },['filter'])
 
     return (
       <>

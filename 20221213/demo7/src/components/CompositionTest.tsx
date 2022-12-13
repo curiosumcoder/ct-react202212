@@ -8,7 +8,7 @@ function CompositionTest() {
     <>
       <hr />
       <h5>CompositionTest - Specialization</h5>
-      <Button>Primary</Button>
+      <Button>Demostración</Button>
       <ButtonSuccess>Success</ButtonSuccess>
       <ButtonSubmit>Submit</ButtonSubmit>
       <hr />

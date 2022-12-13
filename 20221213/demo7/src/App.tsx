@@ -46,9 +46,9 @@ function App() {
           </div>
         </nav>
         <div className="container" style={{ marginTop: "1em" }}>
-          <CurrencyCurrent />
+          {/* <CurrencyCurrent />
           <HooksTest />
-          <CompositionTest />
+          <CompositionTest /> */}
           <HighOrderTest/>
         </div>
       </MonedaContext.Provider>

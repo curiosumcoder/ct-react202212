@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import IProduct from "../../model/IProduct";
 
 function ProductList({products,onSelected}: {products: Array<IProduct>;onSelected?: Function;}) {
+
+  useEffect(() => {
+    console.log("ProductList: After render component ...");
+    return () => {
+      console.log("ProductList: Clean-up component ...");
+    };
+  }, [products]);
+
+  useEffect(() => {
+    console.log("ProductList: After render component (first time) ...");
+    return () => {
+      console.log("ProductList: Clean-up component ...");
+    };
+  }, []);  
 
   if ((products as Array<IProduct>) && products.length > 0) {
     return (

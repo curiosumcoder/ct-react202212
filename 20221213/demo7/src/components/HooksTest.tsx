@@ -9,7 +9,7 @@ function HooksTest() {
   const [{ data, isProcessing, isError }, doSearch] = useProductSearch();
 
   useEffect(() => {
-    doSearch("queso");
+    doSearch('ch');
   });
 
   return (
