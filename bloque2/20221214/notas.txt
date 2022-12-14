@@ -12,3 +12,10 @@ const router = createBrowserRouter([
 
 ...
     <RouterProvider router={router} />
+	
+...
+,
+  {
+    path: "/about",
+    element: <><h1>About</h1></>
+  }
