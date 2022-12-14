@@ -19,3 +19,12 @@ const router = createBrowserRouter([
     path: "/about",
     element: <><h1>About</h1></>
   }
+  
+------------------------------------------------------------------
+Error.tsx  
+https://raw.githubusercontent.com/curiosumcoder/ct-react202212/main/bloque2/20221214/demo9/src/Error.tsx
+
+------------------------------------------------------------------
+Header.tsx
+https://raw.githubusercontent.com/curiosumcoder/ct-react202212/main/bloque2/20221214/demo9/src/Header.tsx
+
