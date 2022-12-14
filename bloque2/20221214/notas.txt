@@ -9,3 +9,6 @@ const router = createBrowserRouter([
     element: <App />
   }
 ]);
+
+...
+    <RouterProvider router={router} />
