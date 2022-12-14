@@ -1,4 +1,4 @@
-# React Introductorio
+# React
 Material relacionado con el curso de React Introductorio impartido para UCenfotec (modalidad virtual) en Diciembre 2022.
 
 ### Requerimientos de software
