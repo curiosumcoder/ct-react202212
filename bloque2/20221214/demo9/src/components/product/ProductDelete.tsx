@@ -2,24 +2,24 @@ import React, { SyntheticEvent, useState, useEffect } from "react";
 import useInput, { IInput } from "../../hooks/useInput";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
+import { useNavigate, useLoaderData } from "react-router-dom";
 
-function ProductDelete({id,onDeleted,onClose,}: {id: number;onDeleted: Function;onClose: Function;}) {
+function ProductDelete() {
   const ps = new ProductService();
 
-  const [product, setProduct] = useState<IProduct|null>();
-
-  useEffect(() => {
-    (async () => {
-      setProduct(await ps.get(id));
-    })();
-  }, [id]);
+  const p = useLoaderData() as IProduct // Se debe contar con el loader correspondiente
+  const [product, setProduct] = useState<IProduct|null>(p);  
+  const navigate = useNavigate();  
 
   const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
 
     if (confirm("¿Desea proceder con la eliminación?")) {
-      await ps.delete(id);
-      onDeleted();
+      if (product != null)
+      {
+        await ps.delete(product.id);
+        navigate('/product')
+      }
     }
   };
 
@@ -32,7 +32,7 @@ function ProductDelete({id,onDeleted,onClose,}: {id: number;onDeleted: Function;
             <button
               type="button"
               className="btn-close ale"
-              onClick={() => onClose()}
+              onClick={() => navigate(-1)}
             ></button>
           </div>
           <form onSubmit={(event) => handleSubmit(event)}>

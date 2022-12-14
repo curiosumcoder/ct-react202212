@@ -1,21 +1,21 @@
 import React, { SyntheticEvent, useState, useRef } from "react";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
+import { useNavigate } from "react-router-dom";
 
-function ProductCreate({onCreated,onClose,}: {
-  onCreated: Function;
-  onClose: Function;
-}) {
+function ProductCreate() {
    const [product, setProduct] = useState<IProduct>({} as IProduct);
   const [isValid, setIsValid] = useState(false);
   let form = useRef<HTMLFormElement>(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
 
     const ps = new ProductService();
     await ps.save(product);
-    onCreated();
+    //onCreated();
+    navigate('/product');
   };
 
   const checkValidation = (event: SyntheticEvent) => {
@@ -40,7 +40,7 @@ function ProductCreate({onCreated,onClose,}: {
       <h6>Product Create</h6>
       {/* {JSON.stringify(product)} */}
       <div className="row justify-content-end">
-        <button type="button" className="btn-close ale" onClick={() => onClose()}></button>
+        <button type="button" className="btn-close ale" onClick={()=> navigate(-1)}></button>
       </div>
       <form onSubmit={(event) => handleSubmit(event)} ref={form}>
         <div className="mb-3">

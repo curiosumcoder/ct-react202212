@@ -1,25 +1,25 @@
 import { useState, useEffect, MouseEventHandler } from "react";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
+import { useNavigate, useLoaderData, useParams } from "react-router-dom";
 
-function ProductDetails({ id, onClose }: { id: number; onClose: Function }) {
+function ProductDetails() {
   const ps = new ProductService();
-
-  const [product, setProduct] = useState<IProduct|null>();
-
-  useEffect(() => {
-    (async () => {
-      setProduct(await ps.get(id));
-    })();
-  }, [id]);
+  const p = useLoaderData() as IProduct // Se debe contar con el loader correspondiente
+  const [product, setProduct] = useState<IProduct|null>(p);  
+  const navigate = useNavigate(); 
+  
+  let parametros = useParams();
+  let {id} = useParams()
 
   return (
     <>
+      {JSON.stringify(parametros)}
       {product && (
         <>
           <h6>Product Details</h6>
           <div className="row justify-content-end">
-            <button type="button" className="btn-close ale" onClick={() => onClose()}></button>
+            <button type="button" className="btn-close ale" onClick={() => navigate(-1)}></button>
           </div>
           <dl>
             <dt>Id</dt>

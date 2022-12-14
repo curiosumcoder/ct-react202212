@@ -5,12 +5,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Error from './Error';
 import ProductMaintenance from './components/product/ProductMaintenance';
 import ProductCreate from './components/product/ProductCreate';
 import ProductDetails from './components/product/ProductDetails';
 import ProductEdit from './components/product/ProductEdit';
 import ProductDelete from './components/product/ProductDelete';
+import ProductIndex from './components/product/ProductIndex';
+import { productLoader } from './loaders/productLoader';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +23,9 @@ const router = createBrowserRouter([
     children: [
       {
         path: "product",
-        element: <ProductMaintenance />,
+        element: <ProductMaintenance />,        
         children: [
+          { index: true, element: <ProductIndex /> },
           {
             path: "create",
             element: <ProductCreate />,
@@ -29,14 +33,17 @@ const router = createBrowserRouter([
           {
             path: ":id",
             element: <ProductDetails />,
+            loader: productLoader,
           },
           {
             path: "edit/:id",
             element: <ProductEdit />,
+            loader: productLoader,
           },    
           {
             path: "delete/:id",
             element: <ProductDelete />,
+            loader: productLoader,
           },                   
         ]
       },

@@ -2399,6 +2399,18 @@
         "fax": null,
         "homePage": "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#"
       }
+    },
+    {
+      "productName": "Demostración RUTAS",
+      "unitPrice": "100",
+      "quantityPerUnit": "Cajas de 20 kilos",
+      "id": 78
+    },
+    {
+      "productName": "Sandía de exportación primera",
+      "unitPrice": "100",
+      "quantityPerUnit": "Cajas de 20 kilos",
+      "id": 79
     }
   ]
 }

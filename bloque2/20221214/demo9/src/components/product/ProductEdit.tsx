@@ -1,33 +1,23 @@
 import React, { SyntheticEvent, useState, useRef, useEffect } from "react";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
+import { useNavigate, useLoaderData } from "react-router-dom";
 
-function ProductEdit({
-  id,
-  onEdited,
-  onClose,
-}: {
-  id: number;
-  onEdited: Function;
-  onClose: Function;
-}) {
+function ProductEdit() {
   const ps = new ProductService();
-  const [product, setProduct] = useState<IProduct | null>({} as IProduct);
   const [isValid, setIsValid] = useState(false);
   let form = useRef<HTMLFormElement>(null);
 
-  useEffect(() => {
-    (async () => {
-      setProduct(await ps.get(id));
-    })();
-  }, [id]);
+  const p = useLoaderData() as IProduct // Se debe contar con el loader correspondiente
+  const [product, setProduct] = useState<IProduct|null>(p);  
+  const navigate = useNavigate();
 
   const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();
 
     if (product) {
       await ps.edit(product?.id, product);
-      onEdited();
+      navigate('/product');
     }
   };
 
@@ -58,7 +48,7 @@ function ProductEdit({
         <button
           type="button"
           className="btn-close ale"
-          onClick={() => onClose()}
+          onClick={() => navigate(-1)}
         ></button>
       </div>
       <form onSubmit={(event) => handleSubmit(event)} ref={form}>
