@@ -1,0 +1,14 @@
+.bi.bi-x-lg {
+  color: red;
+  cursor: pointer;
+}
+
+.bi.bi-arrow-left-circle-fill {
+  color: blue;
+  cursor: pointer;
+}
+
+.bi.bi-file-text-fill {
+    color: gray;
+    cursor: pointer;
+  }
