@@ -6,12 +6,41 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Error from './Error';
+import ProductMaintenance from './components/product/ProductMaintenance';
+import ProductCreate from './components/product/ProductCreate';
+import ProductDetails from './components/product/ProductDetails';
+import ProductEdit from './components/product/ProductEdit';
+import ProductDelete from './components/product/ProductDelete';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
-    errorElement: <Error/>
+    errorElement: <Error/>,
+    children: [
+      {
+        path: "product",
+        element: <ProductMaintenance />,
+        children: [
+          {
+            path: "create",
+            element: <ProductCreate />,
+          },
+          {
+            path: ":id",
+            element: <ProductDetails />,
+          },
+          {
+            path: "edit/:id",
+            element: <ProductEdit />,
+          },    
+          {
+            path: "delete/:id",
+            element: <ProductDelete />,
+          },                   
+        ]
+      },
+    ]
   },
   {
     path: "/about",
