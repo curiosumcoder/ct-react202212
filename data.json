@@ -2401,10 +2401,10 @@
       }
     },
     {
-      "id": 79,
-      "productName": "Demostración",
-      "unitPrice": 0,
-      "quantityPerUnit": ""
+      "productName": "Demostración routing modificada",
+      "unitPrice": "444",
+      "quantityPerUnit": "Cajas de 20 kilos",
+      "id": 78
     }
   ]
 }
