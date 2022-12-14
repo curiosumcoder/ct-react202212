@@ -2399,12 +2399,6 @@
         "fax": null,
         "homePage": "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#"
       }
-    },
-    {
-      "productName": "Demostración routing modificada",
-      "unitPrice": "444",
-      "quantityPerUnit": "Cajas de 20 kilos",
-      "id": 78
     }
   ]
 }
