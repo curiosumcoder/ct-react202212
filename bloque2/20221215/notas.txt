@@ -1,0 +1,3 @@
+npm create vite@latest demo10 -- --template react-ts
+npm i @reduxjs/toolkit react-redux
+npm i redux-logger @types/redux-logger

@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import ProductMaintenance from './components/product/ProductMaintenance'
-import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import ProductMaintenance from "./components/product/ProductMaintenance";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+  const [isNavigating, setIsNavigating] = useState(false)
+
+  useEffect(() => {
+    setIsNavigating(true);
+    return () => {
+      setIsNavigating(false);
+    }
+  }, [location]);
 
   return (
     <>
@@ -15,7 +23,7 @@ function App() {
         <Outlet />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
