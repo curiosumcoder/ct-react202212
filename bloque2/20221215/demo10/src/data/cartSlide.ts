@@ -12,7 +12,7 @@ const cartSlide = createSlice({
         removeFromCart : (state, action) => {
             state.items = state.items.filter(i => i !== action.payload)
         },
-        clearCart : (state, action) => {
+        clearCart : (state) => {
             state.items = []
         }
     }
