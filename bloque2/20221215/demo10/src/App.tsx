@@ -3,8 +3,9 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
  // Redux/Redux Toolkit
 import { useDispatch, useSelector } from "react-redux";
-import cartSlide from "./data/cartSlide";
+import cartSlice from "./data/cartSlice";
 import Cart from "./Cart";
+import Product from "./Product";
 
 function App() {
   const products = [1,2,3,4,5,6,7,8,9,10]
@@ -13,11 +14,13 @@ function App() {
   // Read from state on global store
   const { items } = useSelector((state:any) => state.cart)
   // Update state in global store
-  const { addToCart, removeFromCart } = cartSlide.actions;
+  const { addToCart, removeFromCart } = cartSlice.actions;
   // To execute actions on store
   const dispatch = useDispatch<any>()
 
   return <>
+    <Product/>
+    <hr/>
     <Cart/>
     <hr/>
     {<p>Items on Cart: <strong>{items.length}</strong></p>}

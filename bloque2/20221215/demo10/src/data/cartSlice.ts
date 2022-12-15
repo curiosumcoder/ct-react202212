@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const cartSlide = createSlice({
+const cartSlice = createSlice({
     name: 'cart',
     initialState: {
         items: Array()
@@ -18,4 +18,4 @@ const cartSlide = createSlice({
     }
 })
 
-export default cartSlide
+export default cartSlice

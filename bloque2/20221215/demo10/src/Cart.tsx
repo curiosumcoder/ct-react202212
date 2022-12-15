@@ -2,7 +2,7 @@ import React from 'react'
 
  // Redux/Redux Toolkit
  import { useDispatch, useSelector } from "react-redux";
- import cartSlide from "./data/cartSlide";
+ import cartSlice from "./data/cartSlice";
 
 function Cart() {
 
@@ -10,7 +10,7 @@ function Cart() {
   // Read from state on global store
   const { items } = useSelector((state:any) => state.cart)
   // Update state in global store
-  const { clearCart, removeFromCart } = cartSlide.actions;
+  const { clearCart, removeFromCart } = cartSlice.actions;
   // To execute actions on store
   const dispatch = useDispatch<any>()
 
