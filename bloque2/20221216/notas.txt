@@ -15,3 +15,7 @@ package.json
 "test": "vitest --environment happy-dom",
 "testui": "vitest --ui --environment happy-dom",
 "coverage": "vitest run --coverage --environment happy-dom"	
+
+
+-------------------------------------
+https://playwright.dev/
