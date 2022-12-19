@@ -2,14 +2,17 @@ import React, { SyntheticEvent, useState, useEffect } from "react";
 import useInput, { IInput } from "../../hooks/useInput";
 import IProduct from "../../model/IProduct";
 import ProductService from "../../services/ProductService";
-import { useNavigate, useLoaderData } from "react-router-dom";
+import { useNavigate, useLoaderData, useParams } from "react-router-dom";
 
 function ProductDelete() {
   const ps = new ProductService();
 
   const p = useLoaderData() as IProduct // Se debe contar con el loader correspondiente
   const [product, setProduct] = useState<IProduct|null>(p);  
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
+  
+  const {id} = useParams()
+  console.log(`ProductDelete, id: ${id}`)  
 
   const handleSubmit = async (event: SyntheticEvent) => {
     event.preventDefault();

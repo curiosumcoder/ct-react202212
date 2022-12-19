@@ -1,38 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "productName": "Chai",
-      "supplierID": 1,
-      "categoryID": 1,
-      "quantityPerUnit": "10 boxes x 20 bags",
-      "unitPrice": 18,
-      "unitsInStock": 39,
-      "unitsOnOrder": 0,
-      "reorderLevel": 10,
-      "discontinued": false,
-      "category": {
-        "categoryID": 1,
-        "categoryName": "Beverages",
-        "description": "Soft drinks, coffees, teas, beers, and ales"
-      },
-      "orderDetails": null,
-      "supplier": {
-        "supplierID": 1,
-        "companyName": "Exotic Liquids",
-        "contactName": "Charlotte Cooper",
-        "contactTitle": "Purchasing Manager",
-        "address": "49 Gilbert St.",
-        "city": "London",
-        "region": null,
-        "postalCode": "EC1 4SD",
-        "country": "UK",
-        "phone": "(171) 555-2222",
-        "fax": null,
-        "homePage": null
-      }
-    },
-    {
       "id": 2,
       "productName": "Chang",
       "supplierID": 1,
@@ -2399,12 +2367,6 @@
         "fax": null,
         "homePage": "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#"
       }
-    },
-    {
-      "productName": "Demostración RUTAS",
-      "unitPrice": "100",
-      "quantityPerUnit": "Cajas de 20 kilos",
-      "id": 78
     },
     {
       "productName": "Sandía de exportación primera",

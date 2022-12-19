@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
@@ -14,6 +14,7 @@ import ProductEdit from './components/product/ProductEdit';
 import ProductDelete from './components/product/ProductDelete';
 import ProductIndex from './components/product/ProductIndex';
 import { productLoader } from './loaders/productLoader';
+import ProductService from './services/ProductService';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,24 @@ const router = createBrowserRouter([
             path: "delete/:id",
             element: <ProductDelete />,
             loader: productLoader,
+          },
+          {
+            path: "delete2/:id",
+            action: async ({params, request}: any) => {
+              console.log(params)
+              //console.log(request)
+              const {id} = params
+              console.log(id)
+
+              if (id) {
+                if (confirm("¿Desea proceder con la eliminación?")) {
+                    const ps = new ProductService()
+                    await ps.delete(id);
+                }
+              }
+              return null
+            },
+            element: <Navigate to="/product" />
           },                   
         ]
       },

@@ -3,7 +3,7 @@ import useInput, { IInput } from "../../hooks/useInput";
 import useProductSearch from "../../hooks/useProductSearch";
 import Actions from "../../model/Actions";
 import IProduct from "../../model/IProduct";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, Form } from "react-router-dom";
 
 function ProductIndex() {
   const navigate = useNavigate();
@@ -70,6 +70,12 @@ function ProductIndex() {
                   <td>{p.unitPrice}</td>
                   <td>{p.quantityPerUnit}</td>
                   <td>{p.category?.categoryName ?? ""}</td>
+                  <td>
+                    <Form method="post" action={`/product/delete2/${p.id}`}>
+                      <button type="submit" className="btn btn-link"><i className="bi bi-x-lg" title="Delete">
+                        </i></button>    
+                    </Form>
+                  </td>
                   <td>
                     <Link to={`/product/delete/${p.id}`}>
                       <i className="bi bi-x-lg" title="Delete"></i>
