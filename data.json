@@ -2373,6 +2373,24 @@
       "unitPrice": "100",
       "quantityPerUnit": "Cajas de 20 kilos",
       "id": 79
+    },
+    {
+      "productName": "Demostración",
+      "unitPrice": "100",
+      "quantityPerUnit": "Cajas de 20 kilos",
+      "id": 80
+    },
+    {
+      "productName": "Demostración",
+      "unitPrice": "777",
+      "quantityPerUnit": "Cajas de 50 Kg",
+      "id": 81
+    },
+    {
+      "productName": "Demostración",
+      "unitPrice": "999",
+      "quantityPerUnit": "Cajas de 10 kilos",
+      "id": 82
     }
   ]
 }

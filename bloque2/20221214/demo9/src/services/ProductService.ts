@@ -1,14 +1,23 @@
-import IProduct from "../model/IProduct";
+// Implementado utilizando Axios https://axios-http.com/
+// npm i axios
+// yarn add axios
 
-const PRODUCT_URL = import.meta.env.VITE_API_URL;
+import IProduct from "./model/IProduct";
+import axios from 'axios';
+
+const PRODUCT_URL = 'http://localhost:3000/products';
 
 export default class ProductService {
-  async get(id:number): Promise<IProduct | null> {
-    const response = await fetch(`${PRODUCT_URL}/${id}`);
+  constructor()
+  {
+    console.log('ProductService via Axios ...');
+  }
 
-    if (response.ok) {
-      let data = await response.json();
-      return data;
+  async get(id:number): Promise<IProduct | null> {
+    const response = await axios(`${PRODUCT_URL}/${id}`);
+    if (response.status === 200)
+    {
+      return response.data;
     }
 
     return null
@@ -18,46 +27,36 @@ export default class ProductService {
     let url = `${PRODUCT_URL}?productName_like=${filter}`;
     //console.log(`URL: ${url}`);
 
-    let response = await fetch(url);
+    let response = await axios(url);
 
     let data:Array<IProduct> = [];
-    if (response.ok) {
-      data = await response.json();
+    if (response.status === 200) {
+      data = response.data;
     }
 
     return data;
   }
 
   async save(data:IProduct) {
-    let postResponse = await fetch(`${PRODUCT_URL}`, {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    let postResponse = await axios.post(`${PRODUCT_URL}`, data);
 
-    if (postResponse.ok) {
+    if (postResponse.status === 200) {
       alert("¡La operación fué satisfactoria!");
     }
   }
 
   async edit(id:number, data:IProduct) {
-    let putResponse = await fetch(`${PRODUCT_URL}/${id}`, {
-      method: "put",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    let putResponse = await axios.put(`${PRODUCT_URL}/${id}`, data)
 
-    if (putResponse.ok) {
+    if (putResponse.status === 200) {
       alert("¡La operación fué satisfactoria!");
     }
   }
 
   async delete(id:number) {
-    const response = await fetch(`${PRODUCT_URL}/${id}`, {
-      method: "delete",
-    });
+    const response = await axios.delete(`${PRODUCT_URL}/${id}`);
 
-    if (response.ok) {
+    if (response.status === 200) {
       alert("¡La operación fué satisfactoria!");
     }
   }

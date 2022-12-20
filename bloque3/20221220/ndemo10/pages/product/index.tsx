@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
 
 function Index() {
@@ -11,6 +12,11 @@ function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h2>{title}</h2>
+      <div className="col-auto">
+        <Link className="btn btn-primary mb-3" href="/product/create">
+          Create
+        </Link>
+      </div>
     </>
   );
 }
