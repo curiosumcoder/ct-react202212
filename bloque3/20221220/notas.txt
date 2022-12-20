@@ -1,3 +1,8 @@
+npx create-next-app@latest ndemo9 --ts
+yarn create next-app ndemo9 --typescript
+
+-------------------------------------------------
+
 Next.js
 
 	- is a React framework
