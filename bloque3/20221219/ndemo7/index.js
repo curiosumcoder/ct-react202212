@@ -2,7 +2,10 @@ import express from 'express'
 const app = express()
 const port = 8080
 
+// Midlewares
 app.get('/', (req, res) => {
+  console.log(req)
+
   res.send('Hello World!')
 })
 

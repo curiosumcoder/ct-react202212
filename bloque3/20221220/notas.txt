@@ -1,0 +1,27 @@
+Next.js
+
+	- is a React framework
+		- Routing
+		...
+	- Development tasks
+		* webpack
+		- Compiling
+			- TypeScript, (Babel)
+		- Minifying
+		- Bundling
+		- Code Spliting
+
+--------------------------------------------------
+- Rendering
+	- HTML <-----
+	- CSS
+	- JavaScript
+	...
+
+- Rendering estrategies	
+	- Client Side Rendering (CSR)
+		- Hydratation
+	- Pre-Rendering
+		- Server Side Rendering (SSR)
+		- Static Site Generation (SSG)
+	- Universal, Isomorphism.
