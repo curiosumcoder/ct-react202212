@@ -1,8 +1,8 @@
 npx create-next-app@latest ndemo10 --ts
 yarn create next-app ndemo10 --typescript
 
-npm i bootstrap bootstrap-icons
-yarn add bootstrap bootstrap-icons
+npm i bootstrap bootstrap-icons axios formik yup
+yarn add bootstrap bootstrap-icons axios formik yup
 -------------------------------------------------
 
 npx create-next-app@latest ndemo9 --ts
