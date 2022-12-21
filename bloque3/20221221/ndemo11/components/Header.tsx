@@ -2,11 +2,18 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 
+// Redux/Redux Toolkit
+import { useSelector } from "react-redux";
+
 function Header() {
   const router = useRouter();
 
-  const isActive = (path:string) => router.pathname === path
+        // Redux/Redux Toolkit
+  // Read from state on global store
+  const { items } = useSelector((state: any) => state.cart);
 
+  const isActive = (path:string) => router.pathname === path
+  
   return (
     <>
       <header>
@@ -51,6 +58,9 @@ function Header() {
                 </li>
               </ul>
             </div>
+            <Link className="navbar-brand" href="/cart">
+              <i className="bi bi-cart"></i> {items.length}
+            </Link>
           </div>
         </nav>
       </header>
