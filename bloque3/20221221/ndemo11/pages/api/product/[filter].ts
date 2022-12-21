@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import IProduct from '../../../model/product/IProduct';
 import sqlite3 from 'sqlite3';
+import { constants } from 'zlib';
 
 const queryDB = (filter: string) =>
   new Promise<Array<IProduct>>((resolve, reject) => {
@@ -25,7 +26,7 @@ FROM Products WHERE ProductName LIKE ?;`;
           UnitPrice: unitPrice,
           QuantityPerUnit: quantityPerUnit,
         } = row;
-        const p = { id, productName, unitPrice, quantityPerUnit };
+        const p = { id, productName, unitPrice, quantityPerUnit, quantity: 1 };
         result = [p, ...result];
       });
 
@@ -40,10 +41,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Array<IProduct>>
 ) {
-  const {
-    query: { filter },
-    method,
-  } = req;
+  // let {
+  //   query: { filter },
+  //   method,
+  // } = req;
+
+  let {query: { filter }} = req;
+  const {method} = req;
+
+  filter = filter as string;
 
   switch (method) {
     case 'GET':
@@ -52,7 +58,11 @@ export default async function handler(
         console.log(`Searching for ${filter} ...`);
         const data = await queryDB(filter);
         console.log(data);
-        res.status(200).json(data);
+        if (data.length > 0) {
+          res.status(200).json(data);
+        } else {
+          res.status(404).end();
+        }
       } else {
         res.status(200);
       }
