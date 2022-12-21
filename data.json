@@ -2391,6 +2391,12 @@
       "unitPrice": "999",
       "quantityPerUnit": "Cajas de 10 kilos",
       "id": 82
+    },
+    {
+      "productName": "Sandía de expo",
+      "unitPrice": "333",
+      "quantityPerUnit": "Cajas de 5 kilos",
+      "id": 83
     }
   ]
 }

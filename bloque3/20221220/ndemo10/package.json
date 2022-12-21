@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "@popperjs/core": "^2.11.6",
     "@types/body-parser": "^1.19.2",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
