@@ -4,10 +4,10 @@ import { useRouter } from 'next/router';
 import ProductService from '../../services/ProductService';
 import IProduct from '../../model/product/IProduct';
 
-export const getServerSideProps = async (context:any) => {
+export const getServerSideProps = async (context: any) => {
   console.log('Executing Product.Index.getServerSideProps ...');
 
-  const id:any = context.params?.id;
+  const id: any = context.params?.id;
 
   if (id) {
     const ps = new ProductService();
@@ -18,9 +18,9 @@ export const getServerSideProps = async (context:any) => {
   return { notFound: true };
 };
 
-function Details({data}:any) {
+function Details({ data }: any) {
   const title = 'Product - Details';
-  const router = useRouter()
+  const router = useRouter();
   const [product, setProduct] = useState<IProduct | null>(data);
 
   return (
@@ -51,6 +51,17 @@ function Details({data}:any) {
             <dt>Quantity Per Unit</dt>
             <dd>{product?.quantityPerUnit}</dd>
           </dl>
+          <form method="post" action={`/product/delete/${product?.id}`}>
+            <input type="hidden" name='id' value={product?.id} />
+            <button type="submit" className="btn btn-danger" 
+            onClick={(event) => {
+                if (!confirm('¿Desea proceder con la eliminación?')) {
+                  event.preventDefault();
+                }
+              }}>
+              Delete
+            </button>
+          </form>
         </>
       )}
       {!product && (
