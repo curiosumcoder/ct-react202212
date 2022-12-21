@@ -58,7 +58,7 @@ function Index({ data }: any) {
                   <td>{p.quantityPerUnit}</td>
                   <td>{p.category?.categoryName ?? ""}</td>
                   <td>
-                    <Link href={`/api/product/${p.id}`}>
+                    <Link href={`/product/${p.id}`}>
                         <i className="bi bi-x-lg" title="Delete"></i>
                     </Link>
                   </td>
