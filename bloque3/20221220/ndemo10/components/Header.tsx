@@ -1,7 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter();
+
+  const isActive = (path:string) => router.pathname === path
+
   return (
     <>
       <header>
@@ -38,7 +43,7 @@ function Header() {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link href="/product" className="dropdown-item">
+                      <Link href="/product" className={ isActive("/product") ? "dropdown-item active": "dropdown-item"}>
                         Product
                       </Link>
                     </li>
