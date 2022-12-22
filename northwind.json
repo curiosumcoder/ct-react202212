@@ -1416,5 +1416,14 @@
       "quantity": 35,
       "discount": 0.0
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "user": "demo@demo.com",
+      "passwordHash": "asdfasdfsad",
+      "salt": "asdfasd",
+      "roles": "admin"
+    }
   ]
 }
