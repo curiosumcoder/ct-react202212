@@ -1,10 +1,11 @@
-npm install axios bcrypt jsonwebtoken uuid
-yarn add axios bcrypt jsonwebtoken uuid
-
--------------------------------------
 	
 npm install @types/bcrypt @types/jsonwebtoken @types/uuid -D
 yarn add @types/bcrypt @types/jsonwebtoken @types/uuid -D
+
+-------------------------------------
+
+npm install axios bcrypt jsonwebtoken uuid
+yarn add axios bcrypt jsonwebtoken uuid
 
 -------------------------------------
 
