@@ -1,4 +1,4 @@
-﻿{
+{
   "categories": [
     {
       "id": 1,
@@ -15,7 +15,11 @@
       "categoryName": "Confections",
       "description": "Desserts, candies, and sweet breads"
     },
-    { "id": 4, "categoryName": "Dairy Products", "description": "Cheeses" },
+    {
+      "id": 4,
+      "categoryName": "Dairy Products",
+      "description": "Cheeses"
+    },
     {
       "id": 5,
       "categoryName": "Grains/Cereals",
@@ -31,7 +35,11 @@
       "categoryName": "Produce",
       "description": "Dried fruit and bean curd"
     },
-    { "id": 8, "categoryName": "Seafood", "description": "Seaweed and fish" }
+    {
+      "id": 8,
+      "categoryName": "Seafood",
+      "description": "Seaweed and fish"
+    }
   ],
   "suppliers": [
     {
@@ -139,7 +147,7 @@
       "supplierID": 1,
       "categoryID": 1,
       "quantityPerUnit": "10 boxes x 20 bags",
-      "unitPrice": 18.0,
+      "unitPrice": 18,
       "unitsInStock": 39,
       "unitsOnOrder": 0,
       "reorderLevel": 10,
@@ -151,7 +159,7 @@
       "supplierID": 1,
       "categoryID": 1,
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": 19.0,
+      "unitPrice": 19,
       "unitsInStock": 17,
       "unitsOnOrder": 40,
       "reorderLevel": 25,
@@ -163,7 +171,7 @@
       "supplierID": 1,
       "categoryID": 2,
       "quantityPerUnit": "12 - 550 ml bottles",
-      "unitPrice": 10.0,
+      "unitPrice": 10,
       "unitsInStock": 13,
       "unitsOnOrder": 70,
       "reorderLevel": 25,
@@ -175,7 +183,7 @@
       "supplierID": 2,
       "categoryID": 2,
       "quantityPerUnit": "48 - 6 oz jars",
-      "unitPrice": 22.0,
+      "unitPrice": 22,
       "unitsInStock": 53,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -199,7 +207,7 @@
       "supplierID": 3,
       "categoryID": 2,
       "quantityPerUnit": "12 - 8 oz jars",
-      "unitPrice": 25.0,
+      "unitPrice": 25,
       "unitsInStock": 120,
       "unitsOnOrder": 0,
       "reorderLevel": 25,
@@ -211,7 +219,7 @@
       "supplierID": 3,
       "categoryID": 7,
       "quantityPerUnit": "12 - 1 lb pkgs.",
-      "unitPrice": 30.0,
+      "unitPrice": 30,
       "unitsInStock": 15,
       "unitsOnOrder": 0,
       "reorderLevel": 10,
@@ -223,7 +231,7 @@
       "supplierID": 3,
       "categoryID": 2,
       "quantityPerUnit": "12 - 12 oz jars",
-      "unitPrice": 40.0,
+      "unitPrice": 40,
       "unitsInStock": 6,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -235,7 +243,7 @@
       "supplierID": 4,
       "categoryID": 6,
       "quantityPerUnit": "18 - 500 g pkgs.",
-      "unitPrice": 97.0,
+      "unitPrice": 97,
       "unitsInStock": 29,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -247,7 +255,7 @@
       "supplierID": 4,
       "categoryID": 8,
       "quantityPerUnit": "12 - 200 ml jars",
-      "unitPrice": 31.0,
+      "unitPrice": 31,
       "unitsInStock": 31,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -259,7 +267,7 @@
       "supplierID": 5,
       "categoryID": 4,
       "quantityPerUnit": "1 kg pkg.",
-      "unitPrice": 21.0,
+      "unitPrice": 21,
       "unitsInStock": 22,
       "unitsOnOrder": 30,
       "reorderLevel": 30,
@@ -271,7 +279,7 @@
       "supplierID": 5,
       "categoryID": 4,
       "quantityPerUnit": "10 - 500 g pkgs.",
-      "unitPrice": 38.0,
+      "unitPrice": 38,
       "unitsInStock": 86,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -283,7 +291,7 @@
       "supplierID": 6,
       "categoryID": 8,
       "quantityPerUnit": "2 kg box",
-      "unitPrice": 6.0,
+      "unitPrice": 6,
       "unitsInStock": 24,
       "unitsOnOrder": 0,
       "reorderLevel": 5,
@@ -331,7 +339,7 @@
       "supplierID": 7,
       "categoryID": 6,
       "quantityPerUnit": "20 - 1 kg tins",
-      "unitPrice": 39.0,
+      "unitPrice": 39,
       "unitsInStock": 0,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -367,7 +375,7 @@
       "supplierID": 8,
       "categoryID": 3,
       "quantityPerUnit": "30 gift boxes",
-      "unitPrice": 81.0,
+      "unitPrice": 81,
       "unitsInStock": 40,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -379,7 +387,7 @@
       "supplierID": 8,
       "categoryID": 3,
       "quantityPerUnit": "24 pkgs. x 4 pieces",
-      "unitPrice": 10.0,
+      "unitPrice": 10,
       "unitsInStock": 3,
       "unitsOnOrder": 40,
       "reorderLevel": 5,
@@ -391,7 +399,7 @@
       "supplierID": 9,
       "categoryID": 5,
       "quantityPerUnit": "24 - 500 g pkgs.",
-      "unitPrice": 21.0,
+      "unitPrice": 21,
       "unitsInStock": 104,
       "unitsOnOrder": 0,
       "reorderLevel": 25,
@@ -403,7 +411,7 @@
       "supplierID": 9,
       "categoryID": 5,
       "quantityPerUnit": "12 - 250 g pkgs.",
-      "unitPrice": 9.0,
+      "unitPrice": 9,
       "unitsInStock": 61,
       "unitsOnOrder": 0,
       "reorderLevel": 25,
@@ -427,7 +435,7 @@
       "supplierID": 11,
       "categoryID": 3,
       "quantityPerUnit": "20 - 450 g glasses",
-      "unitPrice": 14.0,
+      "unitPrice": 14,
       "unitsInStock": 76,
       "unitsOnOrder": 0,
       "reorderLevel": 30,
@@ -511,7 +519,7 @@
       "supplierID": 14,
       "categoryID": 4,
       "quantityPerUnit": "24 - 200 g pkgs.",
-      "unitPrice": 32.0,
+      "unitPrice": 32,
       "unitsInStock": 9,
       "unitsOnOrder": 40,
       "reorderLevel": 25,
@@ -535,7 +543,7 @@
       "supplierID": 16,
       "categoryID": 1,
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": 14.0,
+      "unitPrice": 14,
       "unitsInStock": 111,
       "unitsOnOrder": 0,
       "reorderLevel": 15,
@@ -547,7 +555,7 @@
       "supplierID": 16,
       "categoryID": 1,
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": 18.0,
+      "unitPrice": 18,
       "unitsInStock": 20,
       "unitsOnOrder": 0,
       "reorderLevel": 15,
@@ -559,7 +567,7 @@
       "supplierID": 17,
       "categoryID": 8,
       "quantityPerUnit": "24 - 250 g  jars",
-      "unitPrice": 19.0,
+      "unitPrice": 19,
       "unitsInStock": 112,
       "unitsOnOrder": 0,
       "reorderLevel": 20,
@@ -571,7 +579,7 @@
       "supplierID": 17,
       "categoryID": 8,
       "quantityPerUnit": "12 - 500 g pkgs.",
-      "unitPrice": 26.0,
+      "unitPrice": 26,
       "unitsInStock": 11,
       "unitsOnOrder": 50,
       "reorderLevel": 25,
@@ -595,7 +603,7 @@
       "supplierID": 18,
       "categoryID": 1,
       "quantityPerUnit": "750 cc per bottle",
-      "unitPrice": 18.0,
+      "unitPrice": 18,
       "unitsInStock": 69,
       "unitsOnOrder": 0,
       "reorderLevel": 5,
@@ -631,7 +639,7 @@
       "supplierID": 20,
       "categoryID": 5,
       "quantityPerUnit": "32 - 1 kg pkgs.",
-      "unitPrice": 14.0,
+      "unitPrice": 14,
       "unitsInStock": 26,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -643,7 +651,7 @@
       "supplierID": 20,
       "categoryID": 1,
       "quantityPerUnit": "16 - 500 g tins",
-      "unitPrice": 46.0,
+      "unitPrice": 46,
       "unitsInStock": 17,
       "unitsOnOrder": 10,
       "reorderLevel": 25,
@@ -679,7 +687,7 @@
       "supplierID": 21,
       "categoryID": 8,
       "quantityPerUnit": "4 - 450 g glasses",
-      "unitPrice": 12.0,
+      "unitPrice": 12,
       "unitsInStock": 95,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -715,7 +723,7 @@
       "supplierID": 23,
       "categoryID": 3,
       "quantityPerUnit": "24 - 50 g pkgs.",
-      "unitPrice": 20.0,
+      "unitPrice": 20,
       "unitsInStock": 10,
       "unitsOnOrder": 60,
       "reorderLevel": 15,
@@ -739,7 +747,7 @@
       "supplierID": 24,
       "categoryID": 7,
       "quantityPerUnit": "50 - 300 g pkgs.",
-      "unitPrice": 53.0,
+      "unitPrice": 53,
       "unitsInStock": 20,
       "unitsOnOrder": 0,
       "reorderLevel": 10,
@@ -751,7 +759,7 @@
       "supplierID": 24,
       "categoryID": 5,
       "quantityPerUnit": "16 - 2 kg boxes",
-      "unitPrice": 7.0,
+      "unitPrice": 7,
       "unitsInStock": 38,
       "unitsOnOrder": 0,
       "reorderLevel": 25,
@@ -787,7 +795,7 @@
       "supplierID": 25,
       "categoryID": 6,
       "quantityPerUnit": "24 boxes x 2 pies",
-      "unitPrice": 24.0,
+      "unitPrice": 24,
       "unitsInStock": 115,
       "unitsOnOrder": 0,
       "reorderLevel": 20,
@@ -799,7 +807,7 @@
       "supplierID": 26,
       "categoryID": 5,
       "quantityPerUnit": "24 - 250 g pkgs.",
-      "unitPrice": 38.0,
+      "unitPrice": 38,
       "unitsInStock": 21,
       "unitsOnOrder": 10,
       "reorderLevel": 30,
@@ -835,7 +843,7 @@
       "supplierID": 28,
       "categoryID": 4,
       "quantityPerUnit": "5 kg pkg.",
-      "unitPrice": 55.0,
+      "unitPrice": 55,
       "unitsInStock": 79,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -847,7 +855,7 @@
       "supplierID": 28,
       "categoryID": 4,
       "quantityPerUnit": "15 - 300 g rounds",
-      "unitPrice": 34.0,
+      "unitPrice": 34,
       "unitsInStock": 19,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -919,7 +927,7 @@
       "supplierID": 2,
       "categoryID": 2,
       "quantityPerUnit": "24 - 8 oz jars",
-      "unitPrice": 17.0,
+      "unitPrice": 17,
       "unitsInStock": 4,
       "unitsOnOrder": 100,
       "reorderLevel": 20,
@@ -931,7 +939,7 @@
       "supplierID": 16,
       "categoryID": 1,
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": 14.0,
+      "unitPrice": 14,
       "unitsInStock": 52,
       "unitsOnOrder": 0,
       "reorderLevel": 10,
@@ -955,7 +963,7 @@
       "supplierID": 15,
       "categoryID": 4,
       "quantityPerUnit": "10 kg pkg.",
-      "unitPrice": 36.0,
+      "unitPrice": 36,
       "unitsInStock": 26,
       "unitsOnOrder": 0,
       "reorderLevel": 15,
@@ -967,7 +975,7 @@
       "supplierID": 7,
       "categoryID": 1,
       "quantityPerUnit": "24 - 355 ml bottles",
-      "unitPrice": 15.0,
+      "unitPrice": 15,
       "unitsInStock": 15,
       "unitsOnOrder": 10,
       "reorderLevel": 30,
@@ -1003,7 +1011,7 @@
       "supplierID": 17,
       "categoryID": 8,
       "quantityPerUnit": "24 - 150 g jars",
-      "unitPrice": 15.0,
+      "unitPrice": 15,
       "unitsInStock": 101,
       "unitsOnOrder": 0,
       "reorderLevel": 5,
@@ -1015,7 +1023,7 @@
       "supplierID": 4,
       "categoryID": 7,
       "quantityPerUnit": "5 kg pkg.",
-      "unitPrice": 10.0,
+      "unitPrice": 10,
       "unitsInStock": 4,
       "unitsOnOrder": 20,
       "reorderLevel": 5,
@@ -1039,7 +1047,7 @@
       "supplierID": 23,
       "categoryID": 1,
       "quantityPerUnit": "500 ml",
-      "unitPrice": 18.0,
+      "unitPrice": 18,
       "unitsInStock": 57,
       "unitsOnOrder": 0,
       "reorderLevel": 20,
@@ -1051,7 +1059,7 @@
       "supplierID": 12,
       "categoryID": 2,
       "quantityPerUnit": "12 boxes",
-      "unitPrice": 13.0,
+      "unitPrice": 13,
       "unitsInStock": 32,
       "unitsOnOrder": 0,
       "reorderLevel": 15,
@@ -1063,7 +1071,7 @@
       "supplierID": 1,
       "categoryID": 7,
       "quantityPerUnit": "Cajas de 5 kilos",
-      "unitPrice": 40.0,
+      "unitPrice": 40,
       "unitsInStock": 100,
       "unitsOnOrder": 0,
       "reorderLevel": 0,
@@ -1265,162 +1273,162 @@
     {
       "orderID": 10248,
       "productID": 11,
-      "unitPrice": 14.0,
+      "unitPrice": 14,
       "quantity": 12,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10248,
       "productID": 42,
       "unitPrice": 9.8,
       "quantity": 10,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10248,
       "productID": 72,
       "unitPrice": 34.8,
       "quantity": 5,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10249,
       "productID": 14,
       "unitPrice": 18.6,
       "quantity": 9,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10249,
       "productID": 51,
       "unitPrice": 42.4,
       "quantity": 40,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10250,
       "productID": 41,
       "unitPrice": 7.7,
       "quantity": 10,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10250,
       "productID": 51,
       "unitPrice": 42.4,
       "quantity": 35,
-      "discount": 1.5000001e-1
+      "discount": 0.15000001
     },
     {
       "orderID": 10250,
       "productID": 65,
       "unitPrice": 16.8,
       "quantity": 15,
-      "discount": 1.5000001e-1
+      "discount": 0.15000001
     },
     {
       "orderID": 10251,
       "productID": 22,
       "unitPrice": 16.8,
       "quantity": 6,
-      "discount": 5.0000001e-2
+      "discount": 0.050000001
     },
     {
       "orderID": 10251,
       "productID": 57,
       "unitPrice": 15.6,
       "quantity": 15,
-      "discount": 5.0000001e-2
+      "discount": 0.050000001
     },
     {
       "orderID": 10251,
       "productID": 65,
       "unitPrice": 16.8,
       "quantity": 20,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10252,
       "productID": 20,
       "unitPrice": 64.8,
       "quantity": 40,
-      "discount": 5.0000001e-2
+      "discount": 0.050000001
     },
     {
       "orderID": 10252,
       "productID": 33,
-      "unitPrice": 2.0,
+      "unitPrice": 2,
       "quantity": 25,
-      "discount": 5.0000001e-2
+      "discount": 0.050000001
     },
     {
       "orderID": 10252,
       "productID": 60,
       "unitPrice": 27.2,
       "quantity": 40,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10253,
       "productID": 31,
-      "unitPrice": 10.0,
+      "unitPrice": 10,
       "quantity": 20,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10253,
       "productID": 39,
       "unitPrice": 14.4,
       "quantity": 42,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10253,
       "productID": 49,
-      "unitPrice": 16.0,
+      "unitPrice": 16,
       "quantity": 40,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10254,
       "productID": 24,
       "unitPrice": 3.6,
       "quantity": 15,
-      "discount": 1.5000001e-1
+      "discount": 0.15000001
     },
     {
       "orderID": 10254,
       "productID": 55,
       "unitPrice": 19.2,
       "quantity": 21,
-      "discount": 1.5000001e-1
+      "discount": 0.15000001
     },
     {
       "orderID": 10254,
       "productID": 74,
-      "unitPrice": 8.0,
+      "unitPrice": 8,
       "quantity": 21,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10255,
       "productID": 2,
       "unitPrice": 15.2,
       "quantity": 20,
-      "discount": 0.0
+      "discount": 0
     },
     {
       "orderID": 10255,
       "productID": 16,
       "unitPrice": 13.9,
       "quantity": 35,
-      "discount": 0.0
+      "discount": 0
     }
   ],
   "users": [
     {
       "id": 1,
-      "user": "demo@demo.com",
+      "email": "demo@demo.com",
       "passwordHash": "asdfasdfsad",
       "salt": "asdfasd",
       "roles": "admin"
