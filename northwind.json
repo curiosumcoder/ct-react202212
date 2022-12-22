@@ -1432,6 +1432,33 @@
       "passwordHash": "asdfasdfsad",
       "salt": "asdfasd",
       "roles": "admin"
+    },
+    {
+      "id": 2,
+      "email": "gbermude@outlook.com",
+      "passwordHash": "$2b$10$HXin/gsSM3Ub2WBxIAKFNeOLfk.wdUBdoGUVpvkUYbtyXNZKpYyGy",
+      "salt": "4ffa6baf-a99c-4ae7-ba0d-0b4bb96f7e05",
+      "roles": [
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "email": "gbermude+1@outlook.com",
+      "passwordHash": "$2b$10$51jU4QDdIOnvLNV2zN7HQOjNMhmWXN7oyesnF5GReaL69RkXnxhOy",
+      "salt": "5b0b1dac-3f21-4a78-b94a-c42a600e94a9",
+      "roles": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "email": "gbermude+2@outlook.com",
+      "passwordHash": "$2b$10$AXhXAXiW/wTiNPjs2zmABu8ip9xuVYsZacYFh4ecy4ialP9km4Rom",
+      "salt": "c0695a23-433f-40ea-b534-477a588c7461",
+      "roles": [
+        ""
+      ]
     }
   ]
 }
