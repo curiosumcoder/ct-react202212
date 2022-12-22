@@ -1,5 +1,15 @@
-	npx create-next-app@latest ndemo12 --ts
-	yarn create next-app ndemo12 --typescript
+npm install axios bcrypt jsonwebtoken uuid
+yarn add axios bcrypt jsonwebtoken uuid
+
+-------------------------------------
+	
+npm install @types/bcrypt @types/jsonwebtoken @types/uuid -D
+yarn add @types/bcrypt @types/jsonwebtoken @types/uuid -D
+
+-------------------------------------
+
+npx create-next-app@latest ndemo12 --ts
+yarn create next-app ndemo12 --typescript
 
 -------------------------------------
 Security Trimming
