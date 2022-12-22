@@ -1,0 +1,36 @@
+Security Trimming
+
+Auth Evidence Based
+-------------------------------------
+
+- SSO (Single Sign On)
+
+-------------------------------------
+	- Authentication provider
+		- Auth0
+		- Amazon Cognito
+		- Firebase Authentication
+		- ...
+
+-------------------------------------
+	- JSON Web Tokens (JWT)
+
+	- OAuth2
+	- OpenID
+
+-------------------------------------
+	User Authentication
+	- Strategies for identify identity
+		- Knowledge based
+		- Ownership based
+				- Auth apps
+				- SMS
+				- Email
+		+ Two-Factor
+		- Biological based
+
+	- Cookie based vs Token based
+
+
+
+Autenticación y Autorización
