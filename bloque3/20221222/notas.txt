@@ -1,6 +1,10 @@
+	npx create-next-app@latest ndemo12 --ts
+	yarn create next-app ndemo12 --typescript
+
+-------------------------------------
 Security Trimming
 
-Auth Evidence Based
+Authentication Evidence Based
 -------------------------------------
 
 - SSO (Single Sign On)
