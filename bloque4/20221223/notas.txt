@@ -1,0 +1,17 @@
+		1- Broken Access Control 
+			- access control
+			- ej.: roles, ...
+			- no private, as public
+			- send private, correct target
+		2- Cryptographic Failures
+			- encrypt
+			- effective. sensitive data.
+		3- Injection
+			* never trust input
+			- data -> instruction					
+			- Cross-Site Scripting
+					<script>alert('You has been hacked!')<script>
+			- SQL Injection
+					; DELETE FROM tabla1 ...; ---
+
+
