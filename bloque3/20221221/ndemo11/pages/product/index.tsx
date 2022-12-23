@@ -26,6 +26,8 @@ function ProductIndex({ data }: any) {
   const title = 'Product - Index';
   console.log(data);
 
+  const __html = "DEMO"
+
   return (
     <>
       <Head>

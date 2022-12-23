@@ -1076,6 +1076,12 @@
       "unitsOnOrder": 0,
       "reorderLevel": 0,
       "discontinued": false
+    },
+    {
+      "productName": "<script>alert('hack'')</script>",
+      "unitPrice": "100",
+      "quantityPerUnit": "Cajas de 20 kilos",
+      "id": 93
     }
   ],
   "customers": [

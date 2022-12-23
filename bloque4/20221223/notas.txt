@@ -13,5 +13,41 @@
 					<script>alert('You has been hacked!')<script>
 			- SQL Injection
 					; DELETE FROM tabla1 ...; ---
+		4- Insecure Design
+			- related to design and architectural flaws
+			- expose information (error messages)
+			- plain text vs encript
+			- development phases
+			- Secure SDLC
+		5- Security Misconfiguration
+			- security configuration process
+			- Hardened
+			- best practices (passwords pol, updates, ...)
+			- Center for Internet Security (CIS) guidelines
+		6- Vulnerable and Outdated Components
+			- software
+			- open source
+			- third-party
+			* ej.: log4j (execute code)
+		7- Identification and Authentication Failures (**)
+			- authentication
+				- HTTP Only
+			- ej.: forgot password
+			- Antiforgery token
+		8- Software and Data Integrity Failures
+			- verification
+			- ej.: CI/CD, automated, ...
+		9- Security Logging and Monitoring Failures
+			- instrumentation
+			- be eager to detect
+			- DDoS
+			- ej: WordPress, ...
+		10- Server-Side Request Forgery (SSRF)
+			- coerce the application to send a 
+			crafted request to an unexpected destination
+			- Anti-forgery token
+			- CORS
+
+
 
 

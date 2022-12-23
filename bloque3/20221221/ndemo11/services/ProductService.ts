@@ -5,7 +5,7 @@
 import IProduct from "../model/product/IProduct";
 import axios from 'axios';
 
-const PRODUCT_URL = 'http://localhost:3001/products';
+const PRODUCT_URL = 'http://localhost:3000/products';
 
 export default class ProductService {
   constructor()
