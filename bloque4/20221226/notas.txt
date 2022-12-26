@@ -1,0 +1,84 @@
+Micro Frontends
+
+- ThoughtWorks Technology Radar, end 2016.
+- Architectural and organizational approach. Business domain.
+- 	Microservices -> (Micro)+Frontend
+		- SPA (Single Page Application) <- Microservice
+- Frontend Monolith
+- Micro Frontends
+		- "app as a composition of features which are owned by independent teams"
+		- mashup (SharePoint, Web Parts, ...)
+		- Not new.
+		- cycle, release
+		- Verticalization
+
+- Ideas
+		- Be Technology Agnostic. (Web) Components.
+				<grid></grid>
+		- Isolate Team Code
+		- Establish Team Prefixes (catalog-product, cart-product, ..)
+		- Favor Native Browser Features over Custom APIs
+		- Build a Resilient Site
+
+	- System
+		- Software
+			- autonomous
+			- own data store
+		- People
+			- one sytem-one team
+			- clear mission
+			- microservice vs micro-frontend
+
+	- Frontend
+		- Page (document)
+		- Fragments (component)
+			- isolated apps?
+			- share data/context, no implementation			
+		- Integration Tecniques (of micro-frontends)
+		- Communication		
+		- Shared (Non-functional requirements)
+			- Web Performance
+			- Security
+			- UX/UI (Design system)
+			- Core verticals (log, audit, auth*)
+			* Knowledge
+
+	- Benefits, Reason to adopt
+		- Optimize for feature development
+			- Layered vs Microfrontends
+		- Increase customer focus.
+		- Make frontend upgrades easier. Technology stack.
+			- monolith (architectures)
+			- micro-frontend
+				- is independently deployable
+					- micro-architecture
+				- isolates risk of failure
+				- narrower in scope
+				- small codebase
+				- predictable (no shared state)
+		- Shared nothing architecture. overhead.
+
+	- Downsides
+		* Team isolation -> extra cost.
+		- not for everyone.
+		- redundacy. shared-nothing.
+		- consistency
+		- heterogeneity
+		- more code
+
+	- So, when?
+		- two-pizza team rule.
+		- for the Web.
+		- productivity vs overhead
+		- great fit (teams scaling?)
+		- proof of concept !!!
+		- who uses?
+			- Otto Group, IKEA, Zalando, Thalia, Spotify, SAP, DAZN
+			- AllegroTech, OpenTable
+
+- Development
+	
+
+
+
+
