@@ -1,3 +1,5 @@
+https://www.npmjs.com/package/create-mf-app
+
 Development
 
 - Decisions: micro-frontends architectures, have multiple micro-frontends 
