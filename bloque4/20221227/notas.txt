@@ -1,0 +1,87 @@
+Development
+
+- Decisions: micro-frontends architectures, have multiple micro-frontends 
+in the same view or have only one micro-frontend per view.
+
+- Methodoly: High Level Architecture -> Integration Techniques.
+
+- Define/Identify aplication structure. Business domain vs Business subdomain. 
+not components.
+
+	- Composition
+			- Client-Side. namespacing.
+				- IFrames
+				- Ajax, h-include.js
+				- Web Components. React, Angular, ...								
+				- Application Shell. parent application, micro-frontends container, 
+				meta-frameworks.
+					- https://single-spa.js.org/m
+					- https://webpack.js.org/concepts/module-federation/
+					- https://frint.js.org/
+					- https://www.piral.io/
+					- https://ara-framework.github.io/website
+
+			- Edge-Side. CDN.
+				- Edge-Side Includes.
+				- Server-Side Includes.
+
+			- Server-Side
+				- Server-Side Includes.
+				- Server-Side Rendering.
+					- https://podium-lib.io/
+			* Routing. Depends on composition.
+
+		- Communication. Depends on Composition.		
+			- Parent->Fragment
+				- attributes			
+				- links
+				- query string
+			- Fragment->Parent
+				- Event Emitter
+				- Custom Events, bubbles
+			- Fragment->Fragment
+				- links
+				- query string			
+				- direct
+				- via parent, Custom Events, bubbles
+				- broadcasting, Custom Events, Broadcast Channel API
+				- event bus, https://www.npmjs.com/package/eev				
+				- reactive streams, rxjs
+				- signals, https://millermedeiros.github.io/js-signals/
+			- General
+				- web storage (local/session storage)
+				- cookies
+				- **backend storage
+
+	- High level architectures.
+		? Questions
+		- Isolation
+			* linked pages
+		- First page load
+			- Instant User feedback
+				- Soft navigation
+					* universal unified SPA
+				* linked universal SPAs
+			* linked pages
+		- Soft navigation
+			* unified SPA
+		* linked SPAs
+		------------------------------
+		* choose the simple one, that works for.
+		- Very Simple.
+			- linked pages
+		- Simple.		
+			- server routing
+			- linked SPAs
+		- Complex
+			- linked universal SPAs
+			- unified SPA
+		- Very Complex.		
+			- universal unified SPA
+
+
+
+
+
+
+
