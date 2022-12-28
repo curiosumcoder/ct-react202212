@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { createNanoEvents } from 'nanoevents';
 
 import Error from './Error';
@@ -21,7 +21,7 @@ const emitter = createNanoEvents();
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home emitter={emitter}/>,
+    element: sessionStorage.getItem('token') ? <Home emitter={emitter}/> : <Navigate to={'/login'}/>,
     errorElement: <Error />,
     children: [
       { index: true, element: <Dashboard /> },

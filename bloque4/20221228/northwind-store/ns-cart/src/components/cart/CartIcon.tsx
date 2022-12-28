@@ -14,7 +14,8 @@ function CartIcon() {
   return (
     <>
       <Link to={'/cart'}>
-        <i className="bi bi-cart" style={{fontSize: '2rem',color: 'cornflowerblue',cursor: 'pointer',}}></i> {items?.length ?? 0}
+        <i className="bi bi-cart" style={{fontSize: '2rem',color: 'cornflowerblue',cursor: 'pointer',}}>
+          </i> {items?.length ?? 0}
       </Link>
     </>
   );

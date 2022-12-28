@@ -1,0 +1,3 @@
+npx create-mf-app
+
+npm install ..\ns-model

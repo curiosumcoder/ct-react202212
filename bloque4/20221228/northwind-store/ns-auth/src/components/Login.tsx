@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
 import './Login.css';
@@ -48,7 +48,12 @@ function Login() {
             type="submit"
             onClick={(event) => {
               event.preventDefault();
-              navigate('/');
+
+              // Backend Auth
+              sessionStorage.setItem('token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2lsYmVydG8iLCJlbWFpbCI6ImdiZXJtdWRlQG91dGxvb2suY29tIiwiaWF0IjoxNTE2MjM5MDIyfQ.p5BPpQ8BaS_AqzUqwSUUwvO0kk4uBXNDEY2jlUuKrPo')
+              
+              //navigate('/');
+              window.location.href = "/"
             }}
           >
             Sign in

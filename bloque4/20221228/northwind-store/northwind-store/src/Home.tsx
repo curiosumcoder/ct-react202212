@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import cart from 'ns_cart/cart';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import renderMFE from './renderMFE';
 import { Link, NavLink } from 'react-router-dom';
 import Header from './Header';
 
 function Home({ emitter }) {
+  const navigate = useNavigate();
+
+  const [token,setToken] = useState<string|null>()  
+
   useEffect(() => {
     const unbind = emitter.on('addToCart', (product) => {
       console.log('App.addToCart: ', product);
@@ -50,6 +54,7 @@ function Home({ emitter }) {
           </li>
         </ul>
         <hr />
+        {token && <h1>OK</h1>}
         <div className="dropdown">
           <a
             href="#"
@@ -86,9 +91,12 @@ function Home({ emitter }) {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link className="dropdown-item" to={'/login'}>
+              <a className="dropdown-item" onClick={()=>{
+                sessionStorage.removeItem('token')   
+                navigate('/login')
+              }}>
                 Sign out
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
